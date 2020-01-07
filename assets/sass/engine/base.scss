@@ -30,13 +30,14 @@ html {
   }
 }
 
-body {
-  box-sizing: border-box;
-  padding: 3rem;
-
+body{
+ //background: $color-primary; // Change to $color-primary
+  margin: 0;
+  font: 14px/20px sans-serif;
+  color: $color-primary;
   @include respond(tab-port) {
-      padding: 0;
-  }
+    padding: 0;
+}
 }
 
 ::selection {

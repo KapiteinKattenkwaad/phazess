@@ -4,6 +4,9 @@
   +
 
 */
+html {
+  color: blue;
+}
 
 .header{
   display: block;
@@ -13,5 +16,6 @@
 
   h1{
     margin: 0 0 30px;
+    color: red;
   }
 }
