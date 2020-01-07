@@ -1,9 +1,8 @@
 {
   "name": "grunt-sass-master",
   "version": "1.1.0",
-  "description": "A Simple Grunt Sass Starter Template",
-  "author": "Andy Crone <andy@andycrone.com>",
-  "homepage": "https://andycrone.com/articles/code-snippets/simple-gruntfile-sass-starter-example/",
+  "description": "Phaes",
+  "author": "Max S",
   "repository": {
     "type": "git",
     "url": "git://github.com/andycrone/grunt-sass-starter"
