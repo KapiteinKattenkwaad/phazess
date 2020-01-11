@@ -7,7 +7,7 @@
 
 // Colours
 
-$color-primary: red;
+$color-primary: white;
 $color-white: white;
 $color-black: #161615;
 $color-green-light: #2CE578;
@@ -20,3 +20,7 @@ $line-height-normal: 2.4rem;
 $max-width-big: 90rem;
 
 $base-line-height: 1.7;
+
+//box-shadows
+$box-shadow-black: 0 1rem 2rem rgba($color-black,.2);
+$box-shadow-green: 0 1rem 2rem rgba($color-green-light,.2);

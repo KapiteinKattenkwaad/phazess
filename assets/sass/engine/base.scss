@@ -44,3 +44,15 @@ body{
   background-color: $color-primary;
   color: $color-white;
 }
+
+.btn--big {
+  padding: 5px 15px;
+  border: 2px solid $color-black;
+  font-family: 'Playfair Display', serif;
+  display: inline-block;
+  font-size: 1.8rem;
+  background-color: $color-white;
+  color: $color-black;
+  transition: all .3s ease-in;
+  cursor: pointer;
+}

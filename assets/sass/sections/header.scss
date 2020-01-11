@@ -4,18 +4,61 @@
   +
 
 */
-html {
-  color: blue;
+
+
+.header {
+  position: absolute;
+  padding: 1em;
+  z-index: 20;
+  //display: flex;
+  justify-content: space-between;
+  width: calc(100% - 2em);
+  //background: $color-black;
+
+  &__phone {
+    display: inline-block;
+    float: right;
+    margin-top: 1rem;
+  }
+
+  a {
+      text-decoration: none;
+      color: $color-white;
+  }
+
+  a.logo {
+      font-weight: bold;
+      text-transform: uppercase;
+
+  }
+
+  nav ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 100%;
+      margin: 2rem;
+      padding: 0;
+
+      li a {
+          padding: 1em;
+      }
+  }
+  &__links {
+    color: $color-green-light;
+  }
 }
 
 .header{
-  display: block;
-  padding: 150px 30px 0;
-  width: 420px;
-  max-width: 100%;
+
 
   h1{
+    display: block;
+    padding: 150px 30px 0;
+    width: 420px;
+    max-width: 100%;
     margin: 0 0 30px;
-    color: red;
+    color: green;
   }
 }

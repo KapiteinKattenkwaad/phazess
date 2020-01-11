@@ -1,0 +1,71 @@
+/*
+
+  Top
+  +
+
+*/
+
+.top {
+  min-height: 90vh;
+  background-color: $color-black;
+
+  &--wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr; 
+  }
+
+  &__img {
+    position: relative;
+    
+    img {
+      position: absolute;
+      left: 45%;
+      height: 48rem;
+      top: 16rem;
+      box-shadow: $box-shadow-green;
+    }
+  }
+
+  &__text {
+      margin-top: 14rem;
+      margin-left: 14rem;
+    &__title {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      &--span {
+        &--am {
+          font-style: italic;
+          font-size: 3rem;
+          margin-right: 1.5rem;
+        }
+
+        &--dj {
+          color: $color-green-light;
+          font-size: 2.5rem;
+        }
+      }
+    }
+
+    &__subtitle {
+        margin-top: 5rem;
+    }
+
+    &__cta {
+      margin-top: 3rem;
+    }
+  }
+
+  &__button {
+    position: relative;
+
+    &--cta {
+      position: absolute;
+      right: 18%;
+    bottom: -28vh;
+    }
+  }
+}
+
+.footer{
+  padding: 0 30px 150px;
+}

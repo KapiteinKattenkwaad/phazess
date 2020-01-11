@@ -1,0 +1,29 @@
+/*
+
+  TUNR
+  +
+
+*/
+
+
+.turn {
+  min-height: 95vh;
+  &--wrapper {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+
+  }
+
+  &__title {
+    color: $color-black;
+    margin-top: 5rem;
+    clip-path: url('#curve');
+
+    path {
+      fill: transparent;
+    }
+  }
+}

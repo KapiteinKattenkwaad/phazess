@@ -5,10 +5,15 @@
 
 */
 
-.main{
-  padding: 0 30px;
+html {
+  font-size: 62.5%;
+//
 }
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
+//font-family: 'Roboto', sans-serif;
+//font-family: 'Playfair Display', serif;
 
-.main-success{
-  color: white;
+body {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
