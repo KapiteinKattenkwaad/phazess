@@ -4,7 +4,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     jshint: {
       options: {
-        jshintrc: '.jshintrc'
+       // jshintrc: '.jshintrc'
       },
       all: [
         'Gruntfile.js',
@@ -41,7 +41,7 @@ module.exports = function(grunt) {
     },
     watch: {
       options: {
-        livereload: false
+        livereload: true
       },
       sass: {
         files: [

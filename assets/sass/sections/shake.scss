@@ -1,16 +1,16 @@
 /*
 
-  TUNR
+  SHAKE
   +
 
 */
 
 
-.turn {
+.shake {
   min-height: 95vh;
   z-index: -1;
   position: sticky;
-  bottom: 0px;
+  top: 0px;
   &--wrapper {
     display: flex;
     justify-content: center;
