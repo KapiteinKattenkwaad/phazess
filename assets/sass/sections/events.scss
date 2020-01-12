@@ -88,12 +88,16 @@
   }
   .glider-slide {
     opacity: .4;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
   
   }
 }
 
 .glider-slide.active {
   opacity: 1;
+  margin-left: 15rem;
 }
 
 .glider-prev {
