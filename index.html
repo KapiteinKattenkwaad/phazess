@@ -84,15 +84,17 @@
               Check things out on my wild website!
             </p>
             <div class="top__text__cta">
-              <a class="link-cta" href="#">See me play </a>
+              <a class="link-cta" href="#events">See me play </a>
             </div>
           </div>
         </div>
 
         <div class="top__button">
-          <div class="top__button--cta btn--big">
-            hear me out
-          </div>
+          <a href="#mixes">
+            <div class="top__button--cta btn--big">
+              hear me out
+            </div>
+          </a>
         </div>
 
       </section>
@@ -105,7 +107,7 @@
       </section>
 
       <!-- Mixes-->
-      <section class="mixes">
+      <section class="mixes" id="mixes">
         <div class="mixes--wrapper">
           <div class="mixes__text">
             <h2 class="mixes__text__title">
@@ -248,9 +250,11 @@
             <img src="./assets/img/phazes-mixes.png" alt="Dj Phazes mixes">
           </div>
           <div class="mixes__button">
-            <div class="mixes__button--cta btn--big">
-              My soundcloud
-            </div>
+            <a href="https://soundcloud.com/phazes/tracks" target="_blank">
+              <div class="mixes__button--cta btn--big">
+                My soundcloud
+              </div>
+            </a>
           </div>
       </section>
 
@@ -262,7 +266,7 @@
       </section>
 
       <!-- EVENTS-->
-      <section class="events">
+      <section class="events" id="events">
         <div class="events--wrapper">
           <div class="events__text">
             <h2 class="events__text__title">
@@ -280,13 +284,14 @@
 
 
           <div class="events__text__cta">
-            <a class="link-cta" href="#">My FB page </a>
+            <a class="link-cta" href="https://www.facebook.com/djphazes/" target="_blank">My FB page </a>
           </div>
         </div>
 
         <div class="events__container">
           <div class="glider-contain">
             <div class="glider">
+
               <div>
                 <div class="glider__card">
                   <div class="glider__card__img">
@@ -368,11 +373,7 @@
               </div>
 
               <form action="#" class="form">
-                <div class="u-margin-bottom-medium">
-                  <h2 class="heading-secondary">
-                    Start booking now
-                  </h2>
-                </div>
+
 
                 <div class="form__group">
                   <input type="text" class="form__input" placeholder="Full name" id="name" required>
@@ -445,7 +446,7 @@
 
     <form action="#" class="form">
 
-      <div class="form__group form__group--full-width">
+      <div class="form__group">
         <input type="text" class="form__input" placeholder="Full name" id="name" required>
         <label for="name" class="form__label">Full name</label>
       </div>
@@ -481,6 +482,67 @@
 
   </section>
 
+  <section class="merch">
+
+    <div class="merch--wrapper">
+      <div class="merch__text">
+        <h2 class="merch__text__title">
+          <span class="merch__text__title--span--am">
+            STRIP THAT
+          </span>
+          <br class="u-space-desktop">
+          <span class="merch__text__title--span--dj">
+            merch
+          </span>
+          DOWN FOR ME
+        </h2>
+      </div>
+    </div>
+
+    <div class="merch__container">
+      <div class="glider-merch-contain">
+        <div class="glider-merch">
+
+          <div>
+            <div class="glider-merch__card">
+              <div class="glider-merch__card__img">
+                <img src="./assets/img/event1.png" alt="event one">
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="glider-merch__card">
+              <div class="glider-merch__card__img">
+                <img src="./assets/img/event1.png" alt="event one">
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="glider-merch__card">
+              <div class="glider-merch__card__img">
+                <img src="./assets/img/event1.png" alt="event one">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+        <button role="button" aria-label="Previous" class="glider-merch-prev">
+          <img src="./assets/img/arrow-right.svg" alt="Previous">
+        </button>
+        <button role="button" aria-label="Next" class="glider-merch-next">
+          <img src="./assets/img/arrow-right.svg" alt="Next">
+        </button>
+      </div>
+  </section>
+
+  </section>
+
 
 
   </main>
@@ -488,6 +550,17 @@
 
 
   <footer class="footer" role="contentinfo">
+
+    <div class="footer--wrapper">
+      <a href="#" class="footer__logo">
+        <img src="./assets/img/logo-black.svg" alt="Phazes logo">
+      </a>
+
+      <div class="footer__butt">
+        <img src="./assets/img/i-butt-your-like.svg" alt="I like your butt">
+      </div>
+
+    </div>
 
   </footer>
 
@@ -534,6 +607,29 @@
         }
       }]
     });
+
+    new Glider(document.querySelector('.glider-merch'), {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      draggable: true,
+      dots: '.dots',
+      arrows: {
+        prev: '.glider-merch-prev',
+        next: '.glider-merch-next'
+      },
+      responsive: [{
+        // screens greater than >= 775px
+        breakpoint: 775,
+        settings: {
+          // Set to `auto` and provide item width to adjust to viewport
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          itemWidth: 150,
+          duration: .7
+        }
+      }]
+    });
+
 
   });
 </script>
