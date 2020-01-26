@@ -24,3 +24,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
         @media only screen and (min-width: 112.5em) { @content };    //1800
     }
 }
+
+@mixin center-text {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}

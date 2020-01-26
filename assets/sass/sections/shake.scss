@@ -11,17 +11,29 @@
   z-index: -1;
   position: sticky;
   top: 0px;
+  @include respond(tab-port) {
+    display: grid;
+  align-content: center;
+  text-align: center;
+  }
   &--wrapper {
     display: flex;
     justify-content: center;
     justify-items: center;
     align-content: center;
     align-items: center;
+    @include respond(tab-port) {
+      display: inherit;
+    }
 
   }
   .sticky-element {
     margin-top: 10rem;
     margin-bottom: 10rem;
     width: 40%;
+    @include respond(tab-port) {
+      margin-top: 15rem;
+      width: 50%;
+     }
   }
 }

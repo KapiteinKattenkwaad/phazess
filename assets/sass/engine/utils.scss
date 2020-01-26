@@ -1,0 +1,39 @@
+.u-space-desktop {
+    @include respond(tab-port) {
+        display: none;
+    }
+}
+
+.book-me {
+    .book-me-now {
+        float: right;
+        margin-top: 25vh;
+        background-color: $color-green-light;
+        border: 1px;
+        font-size: 2rem;
+        right: 0;
+        z-index: 100;
+        padding: 1rem 1.5rem;
+        font-family: "Playfair Display",serif;
+        position: absolute;
+        position: fixed;
+        font-weight: 300;
+        transition: all .3s ease;
+        @include respond(tab-port) {
+            display: none;
+          }
+        &:hover {
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+    }
+}
+
+.u-two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    @include respond(tab-port) {
+        grid-template-columns: 1fr;
+      }
+}

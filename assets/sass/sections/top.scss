@@ -12,6 +12,9 @@
   &--wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr; 
+      @include respond(tab-port) {
+        grid-template-columns: 1fr;
+      }
   }
 
   &__img {
@@ -23,12 +26,24 @@
       height: 48rem;
       top: 16rem;
       box-shadow: $box-shadow-green;
+      @include respond(tab-port) {
+        left: 50%;
+         top: 49rem;
+      transform: translate(-50%, 0);
+      }
     }
   }
 
   &__text {
       margin-top: 14rem;
       margin-left: 14rem;
+
+      @include respond(tab-port) {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        margin-top: 10rem;
+      }
     &__title {
       font-family: 'Playfair Display', serif;
       font-size: 4rem;

@@ -28,11 +28,16 @@
   &__text {
       margin: 15rem 0 5rem 20rem;
       padding-top: 5rem;
+      @include respond(tab-port) {
+        @include center-text;
+      }
     &__title {
       font-family: 'Playfair Display', serif;
       font-size: 4rem;
       font-style: italic;
-      //margin-left: 10rem;
+      @include respond(tab-port) {
+        @include center-text;
+      }
       &--span {
         &--am {
           font-size: 3rem;
@@ -48,8 +53,12 @@
     }
 
     &__cta {
-      margin-top: 3rem;
-      margin-left: 20rem;
+  
+      margin: 3rem 0 3rem 20rem;
+      @include respond(tab-port) {
+        margin: 3rem 0 3rem 0;
+        text-align: center;
+      }
     }
   }
   &__container {
@@ -62,6 +71,11 @@
     display: flex;
     flex-direction: column;
     max-width: 29rem;
+    @include respond(tab-port) {
+      max-width: 24rem;
+      display: flex;
+      margin: auto;
+    }
     margin: auto;
     &__img {
       max-width: 25rem;
@@ -91,6 +105,9 @@
     display: flex;
     justify-items: center;
     justify-content: center;
+    @include respond(tab-port) {
+      margin: auto;
+    }
   
   }
 }
@@ -98,10 +115,15 @@
 .glider-slide.active {
   opacity: 1;
   margin-left: 15rem;
+  @include respond(tab-port) {
+    display: flex;
+    margin: auto;
+  }
 }
-
+  
 .glider-prev {
   left: 3rem !important;
+  transform: rotate(180deg);
 }
 .glider-next  {
   right: 3rem !important;

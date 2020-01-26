@@ -40,6 +40,10 @@ body{
 }
 }
 
+.site-wrapper {
+  position: relative;
+}
+
 ::selection {
   background-color: $color-primary;
   color: $color-white;
@@ -55,4 +59,27 @@ body{
   color: $color-black;
   transition: all .3s ease-in;
   cursor: pointer;
+}
+
+.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  display: inline-block;
+  transition: all .2s;
+  position: relative;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  font-size: $default-font-size;
+  border: none;
+  cursor: pointer;
+
+  &--green {
+    background-color: $color-primary;
+    color: $color-grey-dark-3;
+    border: 1px solid $color-black;
+    &::after {
+        background-color: $color-green-light;
+    }
+}
 }
