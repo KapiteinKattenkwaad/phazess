@@ -24,6 +24,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/amplitudejs@v5.0.3/dist/amplitude.js"></script>
   <title>Phazes | Bringing your grooves to live</title>
 </head>
+<link rel="stylesheet" href="assets/build/app.min.css">
 
 <body>
 
@@ -564,27 +565,21 @@
 
   </footer>
 
-  <link rel="stylesheet" href="assets/build/app.min.css">
+  <script type="text/javascript" src="assets/build/app.min.js" async></script>
 
-  <script type="text/javascript" src="assets/build/app.min.js"></script>
+  <script src="./assets/cssanimation/letteranimation.min.js" async></script>
 
-  <script src="./assets/cssanimation/letteranimation.min.js"></script>
+  <script src="./assets/js/vendor/Glider.js-master/glider.min.js" async></script>
 
-  <script src="./assets/js/vendor/Glider.js-master/glider.min.js"></script>
+  <link rel="stylesheet" href="./assets/js/vendor/Glider.js-master/glider.min.css" async>
 
-  <link rel="stylesheet" href="./assets/js/vendor/Glider.js-master/glider.min.css">
-
-  <script src="./assets/js/ampli.js">
-
-
-
-  </script>
+  <script src="./assets/js/ampli.js" async>  </script>
   </div>
 </body>
 
 </html>
 
-<script>
+<script async>
   window.addEventListener('load', function () {
     new Glider(document.querySelector('.glider'), {
       slidesToShow: 1,
