@@ -5,6 +5,10 @@
 
 */
 
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins/_breakpoints";
+
 
 .header {
   position: absolute;
@@ -15,17 +19,18 @@
   width: calc(100% - 2em);
   //background: $color-black;
 
-  .navigation-desktop {
-    @include respond(tab-port) {
+  @include media-breakpoint-down(md) {
+    .navigation-desktop {
       display: none;
     }
   }
+
 
   &__phone {
     display: inline-block;
     float: right;
     margin-top: 1rem;
-    @include respond(tab-port) {
+    @include media-breakpoint-down(md) {
       display: none;
     }
   }

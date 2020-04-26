@@ -5,31 +5,36 @@
 
 */
 
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins/_breakpoints";
+
 .top {
   min-height: 90vh;
   background-color: $color-black;
 
   &--wrapper {
-      display: grid;
-      grid-template-columns: 1fr 1fr; 
-      @include respond(tab-port) {
-        grid-template-columns: 1fr;
-      }
+      //display: grid;
+      //grid-template-columns: 1fr 1fr;
+      //@include respond(tab-port) {
+      //  grid-template-columns: 1fr;
+      //}
   }
 
   &__img {
     position: relative;
-    
+
     img {
-      position: absolute;
-      left: 45%;
-      height: 48rem;
-      top: 16rem;
+      //position: absolute;
+      //left: 45%;
+      //height: 48rem;
+      //top: 16rem;
       box-shadow: $box-shadow-green;
-      @include respond(tab-port) {
-        left: 50%;
-         top: 49rem;
-      transform: translate(-50%, 0);
+      @include media-breakpoint-up(md) {
+        right: 0;
+        top: 5rem;
+        top: 150px;
+        position: absolute;
       }
     }
   }
@@ -76,9 +81,14 @@
     position: relative;
 
     &--cta {
-      position: absolute;
-      right: 18%;
-    bottom: -28vh;
+      @include media-breakpoint-up(md) {
+        position: absolute;
+        left: 50%;
+        bottom: -43vh;
+      }
+    //  position: absolute;
+    //  right: 18%;
+    //bottom: -28vh;
     }
   }
 }

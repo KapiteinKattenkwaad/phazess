@@ -29,6 +29,7 @@
     ]
   },
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "glider": "^0.1.0",
     "swiper": "^5.3.0"
   }

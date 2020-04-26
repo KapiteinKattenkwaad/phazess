@@ -10,6 +10,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins/_breakpoints";
+
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {
         @media only screen and (min-width: 37.5em) { @content };    //600px

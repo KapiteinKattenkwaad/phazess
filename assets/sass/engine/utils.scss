@@ -1,7 +1,26 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins/_breakpoints";
+
 .u-space-desktop {
-    @include respond(tab-port) {
+    @include media-breakpoint-down(md) {
         display: none;
     }
+}
+
+.u-container {
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.u-grid-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include media-breakpoint-down(md) {
+        display: inline-block;
+    }
+
 }
 
 .book-me {
@@ -19,7 +38,7 @@
         position: fixed;
         font-weight: 300;
         transition: all .3s ease;
-        @include respond(tab-port) {
+    @include media-breakpoint-down(md) {
             display: none;
           }
         &:hover {
@@ -33,7 +52,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    @include respond(tab-port) {
+    @include media-breakpoint-down(md) {
         grid-template-columns: 1fr;
       }
 }
