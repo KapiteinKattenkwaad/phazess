@@ -24,7 +24,7 @@
       transform: translate(-50%, 0);
       position: absolute;
       z-index: 1;
-      @include respond(phone) {
+      @include media-breakpoint-down(sm) {
        width: 100%;
        height: auto;
       }
@@ -32,9 +32,9 @@
   }
 
   &__text {
-    margin: 15rem 0 5rem 20rem;
+    margin: 15rem 0 5rem 40vw;
     padding-top: 5rem;
-    @include respond(tab-port) {
+    @include media-breakpoint-down(md) {
       @include center-text;
     }
 
@@ -42,7 +42,7 @@
       font-family: 'Playfair Display', serif;
       font-size: 4rem;
       font-style: italic;
-      @include respond(tab-port) {
+      @include media-breakpoint-down(md) {
         @include center-text;
 
       }
@@ -66,13 +66,13 @@
     &__cta {
       margin-top: 3rem;
       margin-left: 20rem;
-      @include respond(tab-port) {
+      @include media-breakpoint-down(md) {
         padding-bottom: 3rem;
         margin: auto;
         text-align: center;
       }
       .link-cta {
-        @include respond(tab-port) {
+        @include media-breakpoint-down(md) {
           margin: auto;
         }
       }

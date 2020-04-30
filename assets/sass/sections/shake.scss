@@ -32,10 +32,9 @@
 
   }
   .sticky-element {
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin: 10rem auto;
     width: 40%;
-    @include respond(tab-port) {
+    @include media-breakpoint-down(md){
       margin-top: 15rem;
       width: 50%;
      }

@@ -32,7 +32,7 @@
 
   }
   .sticky-element {
-    margin-top: 30%;
+   margin: 10rem auto;
     width: 40%;
     @include media-breakpoint-down(md) {
      margin-top: 30%;

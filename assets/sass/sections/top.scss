@@ -22,7 +22,9 @@
   }
 
   &__img {
-    position: relative;
+    @include media-breakpoint-up(md) {
+      position: relative;
+    }
 
     img {
       //position: absolute;
@@ -35,6 +37,12 @@
         top: 5rem;
         top: 150px;
         position: absolute;
+      }
+      @include media-breakpoint-down(md) {
+        position: absolute;
+        left: 20%;
+        bottom: -147%;
+        width: 32rem;
       }
     }
   }
@@ -84,11 +92,27 @@
       @include media-breakpoint-up(md) {
         position: absolute;
         left: 50%;
-        bottom: -43vh;
+        bottom: -15vh;
       }
     //  position: absolute;
     //  right: 18%;
     //bottom: -28vh;
+    }
+  }
+  &__social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 1rem 2rem;
+
+    img {
+      width: 130%;
+      transition: all .3s ease;
+      &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
     }
   }
 }
