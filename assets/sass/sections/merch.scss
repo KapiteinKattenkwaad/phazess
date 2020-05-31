@@ -3,11 +3,12 @@
 @import "../../../node_modules/bootstrap/scss/mixins/_breakpoints";
 
 .merch {
-    min-height: 90vh;
+    min-height: 95vh;
   
     &--wrapper {
-      max-width: 820px;
-     // margin: auto;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1rem;
     }
   
     &__img {
@@ -23,18 +24,17 @@
     }
   
     &__text {
-        margin: 15rem 0 5rem 20rem;
-        padding-top: 5rem;
-        
-        @include respond(tab-port) {
-          @include center-text;
-        }
+      margin: 15rem 0 5rem 25vw;
+      padding-top: 5rem;
+      @include media-breakpoint-down(md) {
+        @include center-text;
+      }
       &__title {
         font-family: 'Playfair Display', serif;
         font-size: 4rem;
         font-style: italic;
         color: $color-black;
-        @include respond(tab-port) {
+        @include media-breakpoint-down(md) {
           @include center-text;
         }
         &--span {
@@ -44,9 +44,10 @@
   
           &--dj {
             color: $color-purple-bright;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-family: 'Roboto', sans-serif;
             margin-right: 2rem;
+            margin-left: -15px;
           }
         }
       }
@@ -54,7 +55,7 @@
       &__cta {
     
         margin: 3rem 0 3rem 20rem;
-        @include respond(tab-port) {
+        @include media-breakpoint-down(md) {
           margin: 3rem 0 3rem 0;
           text-align: center;
         }
@@ -71,7 +72,7 @@
       display: flex;
       flex-direction: column;
       max-width: 29rem;
-      @include respond(tab-port) {
+      @include media-breakpoint-down(md) {
         max-width: 24rem;
         display: flex;
         margin: auto;
@@ -88,7 +89,7 @@
       display: flex;
       justify-items: center;
       justify-content: center;
-      @include respond(tab-port) {
+      @include media-breakpoint-down(md) {
         margin: auto;
       }
     
@@ -100,7 +101,7 @@
     margin-left: 15rem;
     transform: scale(1);
 
-    @include respond(tab-port) {
+    @include media-breakpoint-down(md) {
       display: flex;
       margin: auto;
     }

@@ -19,6 +19,12 @@
   min-height: 90vh;
   background-color: $color-black;
 
+  &--wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
   &__playlist {
     &--track {
       margin: 3rem 0;
@@ -49,7 +55,7 @@
   }
 
   &__text {
-    margin: 15rem 0 5rem 40vw;
+    margin: 15rem 0 5rem 25vw;
     padding-top: 5rem;
     @include media-breakpoint-down(md) {
       @include center-text;
@@ -61,21 +67,19 @@
       font-style: italic;
       @include media-breakpoint-down(md) {
         @include center-text;
-
       }
 
       //margin-left: 10rem;
       &--span {
         &--am {
-
           font-size: 3rem;
         }
-
         &--dj {
           color: $color-purple-bright;
-          font-size: 2.5rem;
+          font-size: 1.5rem;
           font-family: 'Roboto', sans-serif;
           margin-right: 2rem;
+          margin-left: -15px;
         }
       }
     }
