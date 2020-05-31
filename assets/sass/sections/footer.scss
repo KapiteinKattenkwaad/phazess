@@ -32,8 +32,9 @@
   }
   &__butt {
     position: absolute;
-    bottom: 5%;
-    left: -4%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     img {
       z-index: 1;
     }
