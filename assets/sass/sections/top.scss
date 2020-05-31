@@ -11,6 +11,7 @@
 
 .top {
   min-height: 90vh;
+  position: relative;
   background-color: $color-black;
 
   &--wrapper {
@@ -86,13 +87,13 @@
   }
 
   &__button {
-    position: relative;
+    //position: relative;
 
     &--cta {
       @include media-breakpoint-up(md) {
         position: absolute;
         left: 50%;
-        bottom: -15vh;
+        bottom: -1vh;
       }
     //  position: absolute;
     //  right: 18%;
@@ -118,8 +119,4 @@
       }
     }
   }
-}
-
-.footer{
-  padding: 0 30px 150px;
 }

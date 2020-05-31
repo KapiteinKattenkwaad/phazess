@@ -1,0 +1,80 @@
+/*
+
+  Navigation
+  +
+
+*/
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins/_breakpoints";
+
+
+.navbar {
+  position: fixed;
+  background: transparent;
+}
+
+.nav-pills {
+
+}
+
+.nav-item {
+  margin: 3rem 0;
+
+}
+
+.nav-link {
+  z-index: 9999;
+  font-family: "Playfair Display",serif;
+  padding: unset !important;
+  color: $color-green-light !important;
+}
+
+.square--link {
+  height: 12px;
+  width: 12px;
+  border: 2px solid;
+  position: relative;
+  border-color: $color-white;
+  padding: 0px 8px;
+  margin-right: 11px;
+}
+
+.square--link--no-line {
+  height: 12px;
+  width: 12px;
+  border: 2px solid;
+  position: relative;
+  border-color: $color-white;
+  padding: 0px 8px;
+  margin-right: 11px;
+}
+
+
+.square--link:before {
+  content: "";
+  display: block;
+  position: absolute;
+  color: $color-white;
+  z-index: 1;
+  top: 108%;
+  left: 50%;
+  border: 1px solid;
+  border-width: 0 0 0 1px;
+  width: 1px;
+  height: 74px;
+}
+
+.active {
+  //color: $color-green-light !important;
+  background: none !important;
+  &:before {
+    content: none;
+  }
+}
+
+
+.active .square--link {
+  border-color: $color-purple-bright;
+}

@@ -13,12 +13,13 @@
 .shake {
   min-height: 95vh;
   z-index: -1;
+  position: -webkit-sticky;
   position: sticky;
-  top: 0px;
-  @include respond(tab-port) {
-    display: grid;
-  align-content: center;
-  text-align: center;
+  top: -100vh;
+  @include media-breakpoint-down(md) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   &--wrapper {
     display: flex;
@@ -26,17 +27,20 @@
     justify-items: center;
     align-content: center;
     align-items: center;
-    @include respond(tab-port) {
+    position: sticky;
+    @include media-breakpoint-down(md) {
       display: inherit;
     }
 
   }
   .sticky-element {
     margin: 10rem auto;
-    width: 40%;
+    padding: 20rem 10rem 10rem 10rem;
+    width: 60%;
     @include media-breakpoint-down(md){
-      margin-top: 15rem;
-      width: 50%;
+      //margin-top: 15rem;
+      //width: 50%;
+      width: 80%;
      }
   }
 }

@@ -4,6 +4,7 @@
 @import "engine/base";
 @import "engine/typography";
 @import "engine/utils";
+@import "engine/animations";
 
 /*
 
@@ -21,6 +22,7 @@
 @import "sections/events";
 @import "sections/contact";
 @import "sections/merch";
+@import "sections/navigation";
 
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";

@@ -33,10 +33,12 @@
   }
   .sticky-element {
    margin: 10rem auto;
-    width: 40%;
+    padding: 10rem;
+    width: 60%;
     @include media-breakpoint-down(md) {
-     margin-top: 30%;
-     width: 50%;
+     //margin-top: 30%;
+     //width: 50%;
+      width: 80%;
     }
   }
 }
