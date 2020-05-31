@@ -551,17 +551,6 @@
 
 <script async>
 
-  $( document ).ready(function() {
-    $("#form").submit(function(e) {
-      e.preventDefault();
-
-      var $form = $(this);
-      $.post($form.attr("action"), $form.serialize()).then(function() {
-        alert("Thank you!");
-      });
-    });
-  });
-
   window.addEventListener('load', function () {
     new Glider(document.querySelector('.glider'), {
       slidesToShow: 1,
