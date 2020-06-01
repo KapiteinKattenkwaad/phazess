@@ -33,8 +33,9 @@
   }
 
   &__text {
-    margin: 15rem 0 5rem 25vw;
-    padding-top: 5rem;
+    padding: 5rem 1rem 1rem 1rem;
+    display: flex;
+    justify-content: center;
     @include media-breakpoint-down(md) {
       @include center-text;
     }
