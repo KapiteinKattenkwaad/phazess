@@ -29,6 +29,7 @@
     align-items: center;
     @include media-breakpoint-down(md) {
       display: inherit;
+      position: relative;
     }
 
   }
@@ -47,7 +48,7 @@
     bottom: 20vh;
     right: 18vw;
     @include media-breakpoint-down(md) {
-      bottom: 0vh;
+      bottom: -5vh;
     }
   }
 }
