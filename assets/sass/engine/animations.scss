@@ -79,11 +79,13 @@
 
 @keyframes moveInLeft {
   0% {
+    display: none;
     opacity: 0;
     transform: translateX(-10rem);
   }
 
   80% {
+    display: block;
     transform: translateX(1rem);
   }
 
@@ -92,6 +94,16 @@
     transform: translate(0);
   }
 }
+
+.moveInLeft {
+  animation: moveInLeft 1.2s ease-in-out;
+}
+
+.moveInRight {
+  animation: moveInRight .4s ease-in-out;
+}
+
+
 
 @keyframes moveInRight {
   0% {
