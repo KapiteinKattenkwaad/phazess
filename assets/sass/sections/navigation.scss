@@ -43,7 +43,21 @@
   border-color: $color-white;
   padding: 0px 8px;
   margin-right: 11px;
+  .active {
+    //color: $color-green-light !important;
+    background: none !important;
+    color: $color-purple-bright !important;
+    &:before {
+      content: none;
+    }
+  }
 }
+
+.active {
+  background: none !important;
+}
+
+
 
 .square--link--no-line {
   height: 12px;
@@ -70,14 +84,7 @@
   height: 50px;
 }
 
-.active {
-  //color: $color-green-light !important;
-  background: none !important;
-  color: $color-purple-bright !important;
-  &:before {
-    content: none;
-  }
-}
+
 
 
 .active .square--link {
