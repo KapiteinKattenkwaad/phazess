@@ -3,6 +3,9 @@
     background-color: $color-black;
   position: relative;
   padding-bottom: 7rem;
+  @include media-breakpoint-down(md) {
+    padding-bottom: 14rem;;
+  }
 
   &--wrapper {
     max-width: 900px;
@@ -66,8 +69,13 @@
     }
     &__group:last-child {
       @include media-breakpoint-down(md) {
-            padding-bottom: 8rem;
+            //padding-bottom: 8rem;
           }
+    }
+    &__group {
+      button {
+        margin: 3rem 0;
+      }
     }
 
     &__input {

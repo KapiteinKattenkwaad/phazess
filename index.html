@@ -605,6 +605,7 @@
       slidesToShow: 1,
       slidesToScroll: 1,
       draggable: true,
+      infinite: true,
       dots: '.dots',
       arrows: {
         prev: '.glider-prev',
@@ -612,10 +613,10 @@
       },
       responsive: [{
         // screens greater than >= 775px
-        breakpoint: 775,
+        breakpoint: 992,
         settings: {
           // Set to `auto` and provide item width to adjust to viewport
-          slidesToShow: 2,
+          slidesToShow: 'auto',
           slidesToScroll: 1,
           itemWidth: 150,
           duration: .7
@@ -627,6 +628,7 @@
       slidesToShow: 1,
       slidesToScroll: 1,
       draggable: true,
+      infinite: true,
       dots: '.dots',
       arrows: {
         prev: '.glider-merch-prev',
@@ -634,10 +636,10 @@
       },
       responsive: [{
         // screens greater than >= 775px
-        breakpoint: 775,
+        breakpoint: 992,
         settings: {
           // Set to `auto` and provide item width to adjust to viewport
-          slidesToShow: 2,
+          slidesToShow: 'auto',
           slidesToScroll: 1,
           itemWidth: 150,
           duration: .7

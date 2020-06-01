@@ -18,6 +18,9 @@
             rgba(black, .9) 50%);
   }
   background-image: none;
+  @include media-breakpoint-down(md) {
+    background: black;
+  }
 
   &--wrapper {
     display: flex;
@@ -27,6 +30,9 @@
       max-width: 1400px;
       margin: 0 auto;
       padding: 10rem 2rem;
+    }
+    @include media-breakpoint-down(md) {
+      justify-content: center;
     }
 
   }
@@ -59,6 +65,9 @@
   &__col1 {
     z-index: 2;
     padding: 2rem;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
     img {
       z-index: 2;
       width: 90%;
@@ -70,6 +79,10 @@
     @include media-breakpoint-up(md) {
       padding: 2rem 10rem 2rem 2rem;
     }
+    @include media-breakpoint-down(md) {
+      padding: 2rem;
+      text-align: center;
+    }
   }
   &__name {
     font-size: 2rem;
@@ -78,8 +91,13 @@
     padding-top: 3rem;
     position: absolute;
     bottom: 10px;
+    font-size: 1.1rem;
+    @include media-breakpoint-down(md) {
+      transform: translate(-50%,-10%);
+      left: 50%;
+    }
     a {
-      font-size: 1rem;
+      font-size: 1.1rem;
       font-style: normal;
     }
   }

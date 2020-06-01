@@ -4,7 +4,9 @@
 
 .merch {
     min-height: 95vh;
-  
+    @include media-breakpoint-down(md) {
+      min-height: 65vh;
+    }
     &--wrapper {
       max-width: 900px;
       margin: 0 auto;
@@ -73,9 +75,13 @@
     align-items: flex-end;
     text-align: center;
     padding: 4rem;
+    @include media-breakpoint-down(md) {
+      align-items: center;
+    }
     &__text {
       font-weight: lighter;
       font-style: italic;
+      font-size: 1.2rem;
     }
     &__btn {
       margin: 1.5rem 0;

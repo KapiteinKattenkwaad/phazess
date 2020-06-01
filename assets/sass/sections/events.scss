@@ -13,6 +13,9 @@
   min-height: 90vh;
   position: relative;
   background-color: $color-black;
+  @include media-breakpoint-down(md) {
+    min-height: 60vh;
+  }
 
   &--wrapper {
     max-width: 900px;
@@ -45,6 +48,7 @@
       font-style: italic;
       @include media-breakpoint-down(md) {
         @include center-text;
+        font-size: 3rem;
       }
       &--span {
         &--am {
@@ -87,6 +91,7 @@
       max-width: 24rem;
       display: flex;
       margin: auto;
+      text-align: center;
     }
     margin: auto;
     &__img {
@@ -101,11 +106,16 @@
     &__date {
       float: right;
       color: $color-green-light;
+      font-size: 1rem;
+      @include media-breakpoint-down(md) {
+        padding-top: 25px;
+      }
     }
 
     &__text {
-      margin-top: 3rem;
+      margin-top: 2rem;
       line-height: $line-height-big;
+      font-size: 1.2rem;
     }
 
     &__link {

@@ -20,6 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 65vh;
   }
   &--wrapper {
     display: flex;
@@ -38,9 +39,9 @@
     padding: 20rem 10rem 10rem 10rem;
     width: 60%;
     @include media-breakpoint-down(md){
-      //margin-top: 15rem;
-      //width: 50%;
-      width: 80%;
+      margin: 1rem auto;
+      padding: 1rem;
+      width: 90%;
      }
   }
 }

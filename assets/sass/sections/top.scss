@@ -40,10 +40,10 @@
         position: absolute;
       }
       @include media-breakpoint-down(md) {
-        position: absolute;
-        left: 20%;
-        bottom: -147%;
-        width: 32rem;
+        position: relative;
+        padding: 4rem 8rem 2rem 8rem;
+        height: auto;
+        width: 100%;
       }
     }
   }
@@ -90,14 +90,15 @@
     //position: relative;
 
     &--cta {
+      @include media-breakpoint-down(md) {
+        left: 50%;
+        transform: translate(-50%, 0%);
+      }
       @include media-breakpoint-up(md) {
         position: absolute;
         left: 50%;
         bottom: -1vh;
       }
-    //  position: absolute;
-    //  right: 18%;
-    //bottom: -28vh;
     }
   }
   &__social-media {

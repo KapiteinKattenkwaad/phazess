@@ -8,6 +8,7 @@
     }
 }
 
+
 .u-container {
     max-width: 70rem;
     margin: 0 auto;
@@ -20,6 +21,8 @@
     @include media-breakpoint-down(md) {
         display: flex;
         position: relative;
+        flex-direction: column;
+        text-align: center;
     }
 
 }
