@@ -74,6 +74,10 @@
   }
 }
 
+.glider-draggable {
+  overflow-x: hidden;
+}
+
 .glider {
   &__card {
     display: flex;
