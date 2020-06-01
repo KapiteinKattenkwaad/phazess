@@ -30,6 +30,20 @@
     }
 
   }
+  &__to-top {
+    position: absolute;
+    right: 0%;
+    top: -5%;
+    padding: 25px 20px;
+    background: $color-purple-bright;
+    transition: all .3s ease;
+    &:hover {
+      transform: scale(1.05);
+    }
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
   &__butt {
     position: absolute;
     left: 50%;
