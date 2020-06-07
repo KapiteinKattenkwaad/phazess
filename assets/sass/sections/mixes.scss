@@ -41,13 +41,15 @@
 
   &__img {
     position: relative;
+    width: 390px;
+    margin: 0 auto;
 
     img {
+      width: 100%;
+      height: auto;
       @include media-breakpoint-up(md) {
-        left: 50%;
-        top: -14rem;
-        transform: translate(-50%, 0);
         position: absolute;
+        top: -8rem;
       }
 
       z-index: 1;

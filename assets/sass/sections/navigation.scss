@@ -40,8 +40,9 @@
   width: 12px;
   border: 2px solid;
   position: relative;
-  border-color: $color-white;
-  padding: 0px 8px;
+  border-color: $color-green-light;
+  padding: 0px 5px;
+  font-size: 8px;
   margin-right: 11px;
   .active {
     //color: $color-green-light !important;
@@ -60,12 +61,13 @@
 
 
 .square--link--no-line {
+  padding: 0px 5px;
+  font-size: 8px;
   height: 12px;
   width: 12px;
   border: 2px solid;
   position: relative;
-  border-color: $color-white;
-  padding: 0px 8px;
+  border-color: $color-green-light;
   margin-right: 11px;
 }
 
@@ -74,14 +76,14 @@
   content: "";
   display: block;
   position: absolute;
-  color: $color-white;
+  color: $color-green-light;
   z-index: 1;
   top: 108%;
   left: 50%;
   border: 1px solid;
   border-width: 0 0 0 1px;
   width: 1px;
-  height: 50px;
+  height: 58px;
 }
 
 
@@ -89,4 +91,11 @@
 
 .active .square--link {
   border-color: $color-purple-bright;
+}
+.active .square--link--no-line {
+  border-color: $color-purple-bright;
+}
+
+.nav-link.active {
+  color: $color-purple-bright !important;
 }

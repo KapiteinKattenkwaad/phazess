@@ -23,7 +23,12 @@
   }
 
   &__img {
+    @include media-breakpoint-down(md) {
+      max-width: unset !important;
+    }
     @include media-breakpoint-up(md) {
+      max-width: 460px;
+      height: auto;
       position: relative;
     }
 
@@ -32,7 +37,9 @@
       //left: 45%;
       //height: 48rem;
       //top: 16rem;
-      box-shadow: $box-shadow-green;
+      height: auto;
+      width: 100%;
+      //box-shadow: $box-shadow-green;
       @include media-breakpoint-up(md) {
         right: 0;
         top: 5rem;
