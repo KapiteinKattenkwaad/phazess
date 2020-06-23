@@ -26,7 +26,7 @@
 
 .nav-link {
   z-index: 9999;
-  font-family: "Playfair Display",serif;
+  font-family: "Playfair Display SC",serif;
   padding: unset !important;
   color: $color-green-light !important;
   transition: all .3s ease;
@@ -91,9 +91,12 @@
 
 .active .square--link {
   border-color: $color-purple-bright;
+  background-color: $color-purple-bright;
 }
 .active .square--link--no-line {
   border-color: $color-purple-bright;
+  background-color: $color-purple-bright;
+
 }
 
 .nav-link.active {

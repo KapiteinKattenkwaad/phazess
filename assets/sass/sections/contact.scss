@@ -21,7 +21,7 @@
         @include center-text;
       }
       &__title {
-        font-family: 'Playfair Display', serif;
+        font-family: 'Playfair Display SC', serif;
         font-size: 4rem;
         font-style: italic;
         @include media-breakpoint-down(md) {
@@ -38,7 +38,7 @@
             border: 1px;
             font-size: 1.8rem;
             margin-right: 2rem;
-            font-family: 'Playfair Display', sans-serif;
+            font-family: 'Playfair Display SC', sans-serif;
             margin-left: -50px;
             padding: 10px 6px;
             font-style: normal;
