@@ -1,6 +1,14 @@
 # Grunt Sass Starter Template
 > A Simple Grunt Sass Starter Template to help new users of Sass and Grunt
 
+install dependencies
+
+install grunt
+npm install -g grunt-cli
+
+run
+grunt watch
+
 This project template pairs with the tutorial found on [andycrone.com](https://andycrone.com/articles/code-snippets/simple-gruntfile-sass-starter-example/) — A simple Grunt Sass template example for beginners - you can run through the tutorial there.
 
 If you know what you're doing, simply clone the repo.

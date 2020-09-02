@@ -151,3 +151,81 @@
 .moveInBottomSlow {
   animation: moveInBottom .9s  ease;
 }
+
+@keyframes rotateVinyl {
+   from {
+     transform: rotateY(0deg) rotateZ(0) rotateX(0);
+   }
+   to {
+     transform: rotateY(45deg) rotateZ(10deg) rotateX(20deg);
+   }
+ }
+
+@keyframes rotateArm {
+  from {
+    transform: rotateZ(-5deg);
+  }
+  to {
+    transform: rotateZ(5deg);
+  }
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0px) scale(.98) translateX(-12px);
+  }
+  35% {
+    transform: translateY(20px) scale(1) translateX(1px);
+  }
+  65% {
+    transform: translateY(0px) scale(.98) translateX(16px);
+  }
+  85% {
+    transform: translateY(20px) scale(1) translateX(-2px);
+  }
+
+  100% {
+    transform: translateY(0px) scale(.98) translateX(-6px);
+  }
+}
+
+@keyframes rainbowShine {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+
+}
+
+@keyframes starsShine {
+  from {
+    transform: scale(.95) translateX(5%);
+    opacity: .5;
+  }
+  to {
+    transform: scale(1) translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes noise {
+  10%, 90% {
+    transform: translate3d(-1px, -1px, 0) scale(1);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 2px, 0) scale(1.2);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0) scale(1);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0) scale(1.2);
+  }
+}

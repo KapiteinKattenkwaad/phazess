@@ -73,9 +73,10 @@
     justify-content: flex-end;
     color: black;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     text-align: center;
     padding: 4rem;
+    margin-top: 4rem;
     @include media-breakpoint-down(md) {
       align-items: center;
     }

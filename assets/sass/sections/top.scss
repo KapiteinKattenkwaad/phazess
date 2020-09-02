@@ -32,7 +32,7 @@
       position: relative;
     }
 
-    img {
+    svg, img {
       //position: absolute;
       //left: 45%;
       //height: 48rem;
@@ -116,6 +116,9 @@
     justify-content: flex-end;
     align-items: flex-end;
     margin: 1rem 2rem;
+    position: fixed;
+    z-index: 3;
+    right: 0%;
     @include media-breakpoint-down(sm) {
       display: none;
     }
@@ -132,4 +135,67 @@
       }
     }
   }
+}
+
+.u--{
+  &fb {
+    top: 43%;
+  }
+  &insta {
+    top:  50%
+  }
+  &soundcloud {
+    top: 57.5%;
+  }
+}
+
+#stars {
+  animation: starsShine 8s infinite linear alternate-reverse;
+
+}
+
+#vinylplaat1 {
+
+}
+
+
+#vinylplaat3 {
+
+}
+
+#Niels_arm2, #Niels_arm1 {
+  animation: rotateArm 4s infinite linear alternate-reverse;
+  transform-origin: top;
+  transform-box: fill-box;
+}
+
+#vinylplaat2, #vinylplaat3 {
+  animation: rotateVinyl 3s infinite linear alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+#vinylplaat2_kopie {
+
+}
+
+#regenboog {
+  opacity: 0;
+  animation: rainbowShine 8s 2s infinite linear alternate;
+
+}
+
+#muzieknoot_1 {
+  animation: moveUpDown 7s infinite linear alternate-reverse;
+}
+
+#muzieknoot_2 {
+  animation: moveUpDown 8s infinite linear alternate-reverse;
+
+}
+
+#geluid {
+  animation: noise 6s 4s infinite linear alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+
 }
