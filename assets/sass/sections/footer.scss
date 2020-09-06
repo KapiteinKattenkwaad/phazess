@@ -102,3 +102,14 @@
     }
   }
   }
+
+
+.bottom-pic {
+  &__img {
+    display: block;
+    position: relative;
+    object-fit: cover;
+    height: 50vh;
+    width: 100vw;
+  }
+}

@@ -76,6 +76,11 @@
   }
   &__container {
     position: relative;
+    @include media-breakpoint-up(lg) {
+      max-width: 60vw;
+      margin: 0 auto;
+    }
+
   }
 }
 
@@ -84,17 +89,19 @@
 }
 
 .glider {
+  overflow-x: hidden;
   &__card {
     display: flex;
     flex-direction: column;
-    max-width: 29rem;
+    max-width: 22rem;
+    margin: 0 2rem;
     @include media-breakpoint-down(md) {
       max-width: 24rem;
       display: flex;
-      margin: auto;
+      margin: 0 2rem;
       text-align: center;
     }
-    margin: auto;
+
     &__img {
       max-width: 25rem;
     }
@@ -123,16 +130,22 @@
       margin: 3rem 0 5rem 0;
     }
   }
+  .glider-slide.active {
+    animation: moveInEvents .4s ease-in;
+  }
   .glider-slide {
     opacity: .4;
     display: flex;
     justify-items: center;
     justify-content: center;
+    transition: all .5s ease-in-out;
+    transform: scale(.7);
     @include media-breakpoint-down(md) {
       margin: auto;
     }
   
   }
+
 }
 
 .glider-slide.active {

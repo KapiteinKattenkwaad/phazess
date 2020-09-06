@@ -43,6 +43,10 @@
     position: relative;
     width: 390px;
     margin: 0 auto;
+    @include media-breakpoint-down(lg) {
+      max-width: 80vw;
+      width: unset;
+    }
 
     img {
       width: 100%;
@@ -138,7 +142,7 @@
       @include media-breakpoint-down(md) {
         transform: translate(-50%, 0);
         left: 50%;
-        bottom: -26vh;
+        bottom: -46vh;
       }
       
     }

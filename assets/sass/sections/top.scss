@@ -30,6 +30,7 @@
       max-width: 460px;
       height: auto;
       position: relative;
+      margin-top: 5rem;
     }
 
     svg, img {
@@ -39,11 +40,15 @@
       //top: 16rem;
       height: auto;
       width: 100%;
+      @include media-breakpoint-up(lg) {
+        box-shadow: $box-shadow-green;
+        top: 10rem;
+      }
+
       //box-shadow: $box-shadow-green;
       @include media-breakpoint-up(md) {
         right: 0;
-        top: 5rem;
-        top: 150px;
+        top: 10rem;
         position: absolute;
       }
       @include media-breakpoint-down(md) {
@@ -102,6 +107,7 @@
       @include media-breakpoint-down(md) {
         left: 50%;
         transform: translate(-50%, 0%);
+        bottom: -5vh;
       }
       @include media-breakpoint-up(md) {
         position: absolute;

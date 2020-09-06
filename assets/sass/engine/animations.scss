@@ -121,6 +121,33 @@
   }
 }
 
+@keyframes moveInMerch {
+  0% {
+    opacity: .4;
+    transform: translateX(0) rotateY(60deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0) scale(1) rotateY(0);
+  }
+}
+
+@keyframes moveInEvents {
+  0% {
+    opacity: .1;
+    transform: translateX(0) rotateX(60deg);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0) scale(1) rotateY(0);
+  }
+}
+
 @keyframes moveInBottom {
   0% {
     opacity: 0;
