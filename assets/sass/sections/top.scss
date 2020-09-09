@@ -91,8 +91,9 @@
     }
 
     &__subtitle {
-        margin-top: 5rem;
-        font-size: 1.4rem;
+      font-size: 1.4rem;
+      max-width: 86vw;
+      margin: 5rem auto 4rem auto;
     }
 
     &__cta {
