@@ -30,7 +30,7 @@
       max-width: 460px;
       height: auto;
       position: relative;
-      margin-top: 5rem;
+      margin-top: 0rem;
     }
 
     svg, img {
@@ -69,6 +69,7 @@
         margin: auto;
         flex-direction: column;
         margin-top: 10rem;
+        padding-left: 5rem;
       }
     &__title {
       font-family: 'Playfair Display SC', serif;
