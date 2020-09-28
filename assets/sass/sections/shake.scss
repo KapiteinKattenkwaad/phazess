@@ -16,11 +16,13 @@
   position: -webkit-sticky;
   position: sticky;
   top: -100vh;
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 65vh;
+    margin-top: 17rem;
+
   }
   &--wrapper {
     display: flex;
@@ -29,9 +31,7 @@
     align-content: center;
     align-items: center;
     position: sticky;
-    @include media-breakpoint-down(md) {
-      display: none;
-    }
+
 
   }
   .sticky-element {
