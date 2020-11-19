@@ -25,6 +25,9 @@
 
   }
   &--wrapper {
+    @include media-breakpoint-down(md) {
+      margin-top: 11rem;
+    }
     display: flex;
     justify-content: center;
     justify-items: center;
