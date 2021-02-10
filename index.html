@@ -42,13 +42,8 @@
 
 <!-- video intro -->
 <section class="video-intro"
-         style="opacity:1; position:fixed;z-index:999; top:50%; transform: translate(0%, -50%); width:100%;height:auto;">
-    <video id="video-logo" class="video-intro" width="100%" height="auto" >
-        <source src="./assets/img/video/phazes-intro.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-
-
+         style="opacity:1; position:fixed;z-index:9999; top:50%; transform: translate(0%, -50%); width:100%;height:auto;">
+		<img id="video-logo" class="video-intro" width="100%" height="auto" src="./assets/img/video/phazes-gif" alt="phazes intro gif">
 </section>
 
 <body data-spy="scroll" data-target="#navbar-example2" data-offset="550">
@@ -18547,15 +18542,15 @@
 
     window.addEventListener('load', function () {
         setTimeout(() => {
-            document.getElementById("video-logo").play();
+
         }, 1000)
 		setTimeout(() => {
 			document.getElementsByClassName("video-intro")[0].classList.add("animation-fade-out");
 			document.getElementById("video-logo").style.display = 'none'
-		}, 6200)
+		}, 2000)
 		setTimeout(() => {
 			document.getElementsByClassName("site-wrapper")[0].style.opacity = 1;
-		}, 5500)
+		}, 1900)
         console.log('loaded')
         new Glider(document.querySelector('.glider'), {
             slidesToShow: 1,
