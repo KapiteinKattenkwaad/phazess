@@ -9,6 +9,22 @@
 @import "../../../node_modules/bootstrap/scss/variables";
 @import "../../../node_modules/bootstrap/scss/mixins/_breakpoints";
 
+@keyframes animation-fade-out {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px);
+    display: none;
+  }
+}
+
+.animation-fade-out {
+  display: none;
+  animation: animation-fade-out .6s linear;
+}
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
