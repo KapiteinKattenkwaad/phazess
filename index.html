@@ -18537,19 +18537,15 @@
 
 <script async>
 
-
-
-
 	if (screen.width >= 768) {
-		console.log('small')
-		// download complicated script
-		// swap in full-source images for low-source ones
+		console.log('big')
+		document.getElementById("video-logo").src = "./assets/img/video/phazes-gif";
+		document.getElementById("video-logo").style.height = '100%'
 	} else {
-		console.log('bigg')
+		console.log('small')
+		document.getElementById("video-logo").src = "./assets/img/video/phazes-mobile.gif";
+		document.getElementById("video-logo").style.height = 'auto'
 	}
-
-
-
 
 
     window.addEventListener('load', function () {
