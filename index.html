@@ -42,8 +42,8 @@
 
 <!-- video intro -->
 <section class="video-intro"
-         style="opacity:1; position:fixed;z-index:9999; top:50%; transform: translate(0%, -50%); width:100%;height:auto;">
-		<img id="video-logo" class="video-intro" width="100%" height="auto" src="./assets/img/video/phazes-gif" alt="phazes intro gif">
+         style="opacity:1; position:fixed;z-index:9999; top:50%; transform: translate(0%, -50%); width:100%;height:100%;">
+		<img id="video-logo" class="video-intro" width="100%" height="100%" src="" alt="phazes intro gif">
 </section>
 
 <body data-spy="scroll" data-target="#navbar-example2" data-offset="550">
@@ -18537,13 +18537,42 @@
 
 <script async>
 
+	const mediaQuery = window.matchMedia('(max-width: 768px)')
 
+	function handleTabletChange(e) {
+		// Check if the media query is true
+		if (e.matches) {
+			console.log('small')
+			document.getElementById("video-logo").src = "./assets/img/video/phazes-mobile-gif";
+		}
+		else {
+			console.log('big')
+			document.getElementById("video-logo").src = "./assets/img/video/phazes-gif";
+		}
+	}
+
+	// Register event listener
+	mediaQuery.addListener(handleTabletChange)
+
+	// Initial check
+	handleTabletChange(mediaQuery)
 
 
     window.addEventListener('load', function () {
-        setTimeout(() => {
+	/*	function changeGifMobile(windowsSize) {
+			if (windowsSize.matches) { // If media query matches
+				console.log('small screen')
+				document.getElementById("video-logo").src = "./assets/img/video/phazes-mobile-gif";
+			} else {
+				console.log('big')
+				document.getElementById("video-logo").src = "./assets/img/video/phazes-gif";
+			}
+		}
 
-        }, 1000)
+		var windowsSize = window.matchMedia("(max-width: 786)")
+		changeGifMobile(windowsSize) // Call listener function at run time
+		windowsSize.addListener(changeGifMobile) // Attach listener function on state changes*/
+
 		setTimeout(() => {
 			document.getElementsByClassName("video-intro")[0].classList.add("animation-fade-out");
 			document.getElementById("video-logo").style.display = 'none'
