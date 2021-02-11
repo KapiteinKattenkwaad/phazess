@@ -18537,14 +18537,18 @@
 
 <script async>
 
+	const mq = window.matchMedia( "(min-width: 600)" );
 
-	if (window.matchMedia('(max-width: 768px)')) {
-		console.log('small');
-		document.getElementById("video-logo").src = "./assets/img/video/phazes-mobile.gif";
-	} else {
+
+	if (mq.matches) {
+		// window width is at least 500px
 		console.log('big');
 		document.getElementById("video-logo").src = "./assets/img/video/phazes-gif";
 		document.getElementById("video-logo").style.height = '100%';
+	} else {
+		// window width is less than 500px
+		document.getElementById("video-logo").src = "./assets/img/video/phazes-mobile.gif";
+		console.log('small')
 	}
 
     window.addEventListener('load', function () {
