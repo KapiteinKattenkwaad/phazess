@@ -18537,41 +18537,22 @@
 
 <script async>
 
-	const mediaQuery = window.matchMedia('(max-width: 768px)')
-
-	function handleTabletChange(e) {
-		// Check if the media query is true
-		if (e.matches) {
-			console.log('small')
-			document.getElementById("video-logo").src = "./assets/img/video/phazes-mobile.gif";
-		}
-		else {
-			console.log('big')
-			document.getElementById("video-logo").src = "./assets/img/video/phazes-gif";
-		}
-	}
-
-	// Register event listener
-	mediaQuery.addListener(handleTabletChange)
-
-	// Initial check
-	handleTabletChange(mediaQuery)
-
-
     window.addEventListener('load', function () {
-	/*	function changeGifMobile(windowsSize) {
-			if (windowsSize.matches) { // If media query matches
-				console.log('small screen')
-				document.getElementById("video-logo").src = "./assets/img/video/phazes-mobile-gif";
-			} else {
+		const mQuery = window.matchMedia('(min-width: 768px)')
+
+		function changeMobile(e) {
+			// Check whether the media query has been matched
+			if (e.matches) {
 				console.log('big')
 				document.getElementById("video-logo").src = "./assets/img/video/phazes-gif";
+			} else {
+				document.getElementById("video-logo").src = "./assets/img/video/phazes-mobile.gif";
+				console.log('small')
 			}
 		}
 
-		var windowsSize = window.matchMedia("(max-width: 786)")
-		changeGifMobile(windowsSize) // Call listener function at run time
-		windowsSize.addListener(changeGifMobile) // Attach listener function on state changes*/
+// Set up event listener
+		mQuery.addListener(changeMobile)
 
 		setTimeout(() => {
 			document.getElementsByClassName("video-intro")[0].classList.add("animation-fade-out");
