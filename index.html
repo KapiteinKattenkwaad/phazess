@@ -18537,21 +18537,14 @@
 
 <script async>
 
-	const mQuery = window.matchMedia('(min-width: 768px)')
 
-	function changeMobile(e) {
-		// Check whether the media query has been matched
-		if (e.matches) {
-			console.log('big')
-			document.getElementById("video-logo").src = "./assets/img/video/phazes-gif";
-		} else {
-			document.getElementById("video-logo").src = "./assets/img/video/phazes-mobile.gif";
-			console.log('small')
-		}
+	if (window.matchMedia('(max-width: 768px)')) {
+		console.log('small');
+		document.getElementById("video-logo").src = "./assets/img/video/phazes-mobile.gif";
+	} else {
+		console.log('big');
+		document.getElementById("video-logo").src = "./assets/img/video/phazes-gif";
 	}
-
-	// Set up event listener
-	mQuery.addListener(changeMobile)
 
     window.addEventListener('load', function () {
 		setTimeout(() => {
