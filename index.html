@@ -18537,23 +18537,23 @@
 
 <script async>
 
-    window.addEventListener('load', function () {
-		const mQuery = window.matchMedia('(min-width: 768px)')
+	const mQuery = window.matchMedia('(min-width: 768px)')
 
-		function changeMobile(e) {
-			// Check whether the media query has been matched
-			if (e.matches) {
-				console.log('big')
-				document.getElementById("video-logo").src = "./assets/img/video/phazes-gif";
-			} else {
-				document.getElementById("video-logo").src = "./assets/img/video/phazes-mobile.gif";
-				console.log('small')
-			}
+	function changeMobile(e) {
+		// Check whether the media query has been matched
+		if (e.matches) {
+			console.log('big')
+			document.getElementById("video-logo").src = "./assets/img/video/phazes-gif";
+		} else {
+			document.getElementById("video-logo").src = "./assets/img/video/phazes-mobile.gif";
+			console.log('small')
 		}
+	}
 
-// Set up event listener
-		mQuery.addListener(changeMobile)
+	// Set up event listener
+	mQuery.addListener(changeMobile)
 
+    window.addEventListener('load', function () {
 		setTimeout(() => {
 			document.getElementsByClassName("video-intro")[0].classList.add("animation-fade-out");
 			document.getElementById("video-logo").style.display = 'none'
