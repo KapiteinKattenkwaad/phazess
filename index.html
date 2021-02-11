@@ -18538,28 +18538,18 @@
 <script async>
 
 
-	const mediaQuerySm = window.matchMedia('(max-width: 767x)');
-	const mediaQueryMd = window.matchMedia('(min-width: 768px)');
 
-	if (mediaQuerySm.matches) {
-		document.getElementById("video-logo").src = "./assets/img/video/phazes-mobile.gif";
-		document.getElementById("video-logo").style.height = 'auto'
+
+	if (screen.width >= 768) {
 		console.log('small')
+		// download complicated script
+		// swap in full-source images for low-source ones
+	} else {
+		console.log('bigg')
 	}
 
-	if (mediaQueryMd.matches) {
-		console.log('big')
-		document.getElementById("video-logo").src = "./assets/img/video/phazes-gif";
-		document.getElementById("video-logo").style.height = '100%'
-	}
-
-	mediaQuerySm.addListener(handleResizeChange);
-	mediaQueryMd.addListener(handleResizeChange);
 
 
-	// Initial check
-	handleResizeChange(mediaQuerySm);
-	handleResizeChange(mediaQueryMd);
 
 
     window.addEventListener('load', function () {
