@@ -18537,21 +18537,25 @@
 
 <script async>
 
-	const mediaQuerySm = window.matchMedia('(min-width: 200x)');
-	const mediaQueryMd = window.matchMedia('(min-width: 768px)');
 
-	if (mediaQuerySm.matches) {
-		document.getElementById("video-logo").src = "./assets/img/video/phazes-mobile.gif";
-		document.getElementById("video-logo").style.height = 'auto'
-		console.log('small')
-	}
-
-	else if (mediaQueryMd.matches) {
-		document.getElementById("video-logo").src = "./assets/img/video/phazes-gif";
-		document.getElementById("video-logo").style.height = '100%'
-	}
 
     window.addEventListener('load', function () {
+
+		const mediaQuerySm = window.matchMedia('(max-width: 767x)');
+		const mediaQueryMd = window.matchMedia('(min-width: 768px)');
+
+		if (mediaQuerySm.matches) {
+			document.getElementById("video-logo").src = "./assets/img/video/phazes-mobile.gif";
+			document.getElementById("video-logo").style.height = 'auto'
+			console.log('small')
+		}
+
+		else if (mediaQueryMd.matches) {
+			console.log('big')
+			document.getElementById("video-logo").src = "./assets/img/video/phazes-gif";
+			document.getElementById("video-logo").style.height = '100%'
+		}
+
 		setTimeout(() => {
 			document.getElementsByClassName("video-intro")[0].classList.add("animation-fade-out");
 			document.getElementById("video-logo").style.display = 'none'
