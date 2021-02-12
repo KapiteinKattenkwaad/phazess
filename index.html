@@ -18537,18 +18537,18 @@
 
 <script async>
 
-	if (screen.width >= 768) {
-		console.log('big')
-		document.getElementById("video-logo").src = "./assets/img/video/phazes-gif";
-		document.getElementById("video-logo").style.height = '100%'
-	} else {
-		console.log('small')
-		document.getElementById("video-logo").src = "./assets/img/video/phazes-mobile.gif";
-		document.getElementById("video-logo").style.height = 'auto'
-	}
-
-
     window.addEventListener('load', function () {
+
+		if (screen.width >= 768) {
+			console.log('big')
+			document.getElementById("video-logo").src = "./assets/img/video/phazes-gif";
+			document.getElementById("video-logo").style.height = '100%'
+		} else {
+			console.log('small')
+			document.getElementById("video-logo").src = "./assets/img/video/phazes-mobile.gif";
+			document.getElementById("video-logo").style.height = 'auto'
+		}
+
 
 		setTimeout(() => {
 			document.getElementsByClassName("video-intro")[0].classList.add("animation-fade-out");
